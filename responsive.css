@@ -1,0 +1,315 @@
+
+@media screen and (min-width: 1025px) {
+    .basketBottom {
+        background-color: #0b3847;
+        color: #0b3847;
+    }
+
+    .resp_basket, .basketBottom {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .sidebar {
+        display: none;
+    }
+
+    .page {
+        padding-bottom: 432px;
+    }
+
+    .basketBottom {
+        position: sticky;
+        bottom: 0;
+        width: 100%;
+        height: 80px;
+        padding: 8px;
+        background-color: white;
+        border-top: 1px solid lightgray;
+        z-index: 1;
+    }
+
+    .resp_buttonBasketFull_Container {
+        width: 100%;
+        height: 63px;
+        background-color: white;
+        /* padding-top: 8px; */
+        /* z-index: 1; */
+    }
+
+    .basketBottomButton, .resp_buttonBasketFull {
+        font-size: 16px;
+        font-weight: bold;
+        padding: 15px;
+        background-color: #115fca;
+        color: white;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+
+    .resp_buttonBasketFull_info {
+        font-size: 16px;
+        font-weight: bold;
+        padding: 15px;
+        background-color: white;
+        color: #115fca;
+        width: 100%;
+        height: 100%;
+        border: 1px solid lightgray;
+        cursor: pointer;
+    }
+
+    .resp_basket {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        flex-direction: column;
+        background-color: white;
+    }
+
+    .resp_basketHead {
+        height: 3.5rem;
+        padding: 16px;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #c8c8c8;
+    }
+
+    .resp_basketHead > .resp_basketHead_basket   {
+        font-size: 16px;
+        font-weight: bold;
+        color: #0b3847;
+    }
+
+    .resp_basketHead > .resp_basketHead_cross {
+        font-size: 25px;
+        font-weight: bold;
+        color: #0b3847;
+        padding: 0 6px;
+        cursor: pointer;
+    }
+
+    .resp_basketMenuSection {
+        flex-direction: column;
+        align-items: center;
+        overflow-y: auto;
+        height: 100%;
+        width: 100%;
+    }
+
+    .resp_basketBottom {
+        flex-direction: column;
+        border-top: 1px solid #c8c8c8;
+        padding: 8px;
+        height: 13rem;
+    }
+
+    
+/* ###########   EMPTY BASKET ############*/
+    .emptyBasket_resp {
+        flex-direction: column;
+        align-items: center;
+        padding: 64px 16px;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 50rem;
+        
+    }
+
+    .resp_emptyBasketImage {
+        width: 32px;
+        margin-bottom: 10px;
+    }
+
+    .resp_emptyBasketText1 {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 6px;
+    }
+    
+    .resp_emptyBasketText2 {
+        text-align: center;
+        line-height: 17px;
+    }
+    
+
+    .resp_emptyBasketButton {
+        margin-top: 8px;
+        color: #115fca;
+        font-weight: bold;
+        font-size: 16px;
+        border: 1px solid lightgray;
+        width: 100%;
+        height: 2.5rem;
+        cursor: pointer;
+    }
+
+/* ###########   FULL BASKET ############*/
+    .resp_BasketItem {
+        padding: 16px;
+        width: 100%;
+        max-width: 50rem;
+    }
+
+    .fullBasketMenuContainer_resp {
+        position: relative;
+        flex-direction: column;
+        color: #0b3847;
+        padding: 12px 0 9px 24px;
+        border-bottom: 1px solid #c8c8c8;
+
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .resp_basketCounter {
+        top: 12px;
+    }
+
+    .resp_orderInfoYellow {
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin-top: 20px;
+    }
+
+    .resp_orderInfoAmount {
+        width: 100%;
+    }
+
+    .resp_orderInfoYellow > p:nth-child(2) {
+        width: 3rem;
+    }
+
+    .resp_calculation {
+        padding: 16px 0px;
+    }
+
+    .basketPrice {
+        margin-top: 4px;
+    }
+
+    /* ###########   FOOTER ############*/
+
+
+    .footerTemplate {
+        flex-direction: column;
+        padding: 16px;
+        height: 27rem;
+    }
+    
+    .footerImportant {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerImportant a {
+        padding: 8px 0px;
+    }
+
+    .infoPopUp {
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        overflow-y: auto;
+        border-radius: 2px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .headerTitle, .headerFlag {
+        display: none;
+    }
+    
+    .headerMiddle {
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .headerMiddle p {
+        font-size: 12px;
+    }
+
+    .searchBarMenus {
+        overflow-x: auto;
+    }
+
+    .saladImage {
+        object-position: center -5rem;
+    }
+
+    .restaurant {
+        padding-top: 62px;
+        padding-bottom: 12px;
+    }
+
+    .disclaimer {
+        font-size: 12px;
+    }
+    #select0 {
+        min-width: 121px;
+    }
+
+    .restaurantName {
+        font-size: 20px;
+    }
+
+    .title, .foodTitle {
+        font-size: 16px;
+    }
+
+    .minInfo p {
+        font-size: 12px;
+    }
+
+    .minTime img {
+        width: 17px;
+        height: 14px;
+    }
+
+    .minBike img {
+        width: 17px;
+        height: 14px;
+    }
+
+    .minBasket img {
+        width: 13px;
+        height: 17px;
+    }
+
+    .infoANDheartContainer {
+        top: 62px;
+    }   
+}
+
+@media screen and (max-width: 370px) {
+    .reviews {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .reviews a {
+        margin-left: 0;
+    }
+
+    .top2Buttons_loginButton, .top2Buttons_registrationButton {
+        font-size: 14px;
+        font-weight: 500;
+        width: 100%;
+        max-width: 347px;
+        height: 40px;
+        border-radius: 2px;
+    }
+
+    .myAccountPopUp_selection_one {
+        background-position: top left;
+        background-size: cover;
+    }
+}

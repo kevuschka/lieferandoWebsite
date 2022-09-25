@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOMErando.de</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="contentTopSection.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="script.js"></script>
+    <script src="content.js"></script>
+    <script src="basket.js"></script>
+    <script src="localstorage.js"></script>
+    <script src="restaurantTemplate.js"></script>
+    <script src="resp_basket.js"></script>
+    <script src="header.js"></script>
+    <script src="footer.js"></script>
+    
+</head>
+<body id="body" onload="checkForSavedBasket();preload();render()">
+    <div id="page" class="page flex">
+        <!-- ########### HEADER ############# -->
+        <div class="headerTemplate" id="headerTemplate"></div> <!--TEMPLATE-->
+        <!-- ########### MAIN ############# -->
+        <div id="main" class="main flex">
+            <!-- ########### CONTENT ############# -->
+            <div id="content" class="content">
+                <div class="contentTop flex">
+                    <img class="topWallpaper" src="img/foodTop.jpg">
+                    <div class="restaurantTemplate flex" id="restaurantTemplate"></div> <!--TEMPLATE-->
+                    <div class="restaurantLogoContainer gray-border flex"><img class="restaurantLogo" src="img/foodIcon1.jpg"></div>
+                </div>
+                <div class="searchBar flex" id="searchBar">
+                    <!-- INCLUDE SEARCHBAR HERE -->
+                    <!-- <div class="searchBarTemplate flex darkblue bg-beige" w3-include-html="searchBarMenus.html"></div> -->
+                </div>
+                <div id="menus" class="contentBottom flex">
+                    <!-- ################# Beliebte Gerichte -->
+                    <div id="lovedMenus" class="contentBottomItem contentBottomLoved flex"></div>
+                    <!-- ################# Burger -->
+                    <div id="burger" class="contentBottomItem contentBottomBurger flex"></div>
+                    <!-- ################# Pommes -->
+                    <div id="fries" class="contentBottomItem contentBottomExtra flex"></div>
+                    <!-- ################# Salate -->
+                    <div id="salad" class="contentBottomItem contentBottomBurger flex"></div>
+                </div>
+            </div>
+            <!-- ########### SIDEBAR ############# -->
+            <div id="sidebar" class="sidebar">
+                <!-- INCLUDE BASKET HERE -->
+            </div>
+        </div>
+        <!-- ########### FOOTER ############# -->
+        <div class="footerTemplate flex centering" id="footerTemplate"></div>  <!--TEMPLATE-->
+    </div>
+    <script src="w3template.js"></script>
+</body>
+</html>
